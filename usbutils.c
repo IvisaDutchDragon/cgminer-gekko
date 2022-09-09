@@ -1086,6 +1086,18 @@ static struct usb_find_devices find_dev[] = {
 		.timeout = COMPAC_TIMEOUT_MS,
 		.latency = LATENCY_UNUSED,
 		INTINFO(gek2_ints) },
+	{
+		.drv = DRIVER_gekko,
+		.name = "Jim.sh 1v8",
+		.ident = IDENT_Jim,
+		.idVendor = 0x0403,
+		.idProduct = 0x6015,
+		.iManufacturer = "FTDI",
+		.iProduct = "FT230X Basic UART",
+		.config = 1,
+		.timeout = COMPAC_TIMEOUT_MS,
+		.latency = LATENCY_UNUSED,
+		INTINFO(gek2_ints) },
 #endif
 	{ DRIVER_MAX, NULL, 0, 0, 0, NULL, NULL, 0, 0, 0, 0, NULL }
 };
